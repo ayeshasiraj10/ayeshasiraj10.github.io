@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>gallery</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+<style>
+
+	
+	a.active,a:hover{
+  background:#A79E9E;
+  transition: .5s;
+}
+	</style>
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<nav>
+      <label class="logo">The Bliss</label>
+      <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="active" href="gallery.html">Gallery</a></li>
+		<li><a href="book.html">Book Now</a></li>
+		<li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width:90px; height: 20px color: black; background: white; border: 0;"><a href="login.html" >Login</a></button></li>
+      </ul>
+    </nav>	
+	
+	<div class="embed-responsive embed-responsive-16by9">
+	  <iframe class="embed-responsive-item" src="Trimedvedieo.mp4" scrolling="no"></iframe>
+</div>
+
+<div class="col-lg-4 col-md-6 col-xs-12" style="width: 100%;">
+	<img src="img1.png" alt="img">
+	<img src="img2.png" alt="img">
+	<img src="img3.png" alt="img" style="margin-left: 32px">
+	<img src="img4.png" alt="img" style="margin-left: 32px">
+	<img src="img5.png" alt="img" style="margin-left: 32px">
+	<img src="img6.png" alt="img" style="margin-left: 32px">
+	
+	</div>
+	
+	
+	<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?34681';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"Let's Chat",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"WATI",
+      "brandSubTitle":"Typically replies within a day",
+      "brandImg":"https://cdn.clare.ai/wati/images/WATI_logo_square_2.png",
+      "welcomeText":"Hi there!\nHow can I help you?",
+      "messageText":"Hello, I have a question about {{page_link}}",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"923349306436"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+	
+<div class="footer" style="overflow: hidden; width: 100%;">
+	<iframe src="footer.html" style=" width: 100%; overflow: hidden;" scrolling="no"></iframe>
+	</div>
+	
+	
+	
+	
+	
+</body>
+</html>

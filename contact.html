@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>contact</title>
+<link href="index.css" rel="stylesheet" type="text/css">
+	<style>
+		a.active,a:hover{
+  background:#B7B4B4;
+  transition: .5s;		
+}
+	</style>
+</head>
+
+<body>
+	<div>
+	<nav>
+      <label class="logo">The Bliss</label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+		<li><a class="active"  href="contact.html">Contact</a></li>
+		<li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width:90px; height: 20px color: black; background: white; border: 0;"><a href="login.html" >Login</a></button></li>
+      </ul>
+    </nav>
+	</div>
+	
+	<div>
+	 <div class="contact_section layout_padding">
+        <div class="container">
+          <h1 class="contact_taital">Request A Call Back</h1>
+          <div class="email_text">
+             <div class="form-group">
+                <input type="text" class="email-bt" placeholder="Name" name="Email">
+             </div>
+             <div class="form-group">
+                <input type="text" class="email-bt" placeholder="Phone Number" name="Email">
+             </div>
+             <div class="form-group">
+                <input type="text" class="email-bt" placeholder="Email" name="Email">
+             </div>
+             <div class="form-group">
+                <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
+             </div>
+             <div class="send_btn"><a href="thanks.html">SEND</a></div>
+          </div>
+	</div>
+		</div>
+	</div>
+	
+	
+<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?34681';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"Let's Chat",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"DiaPred",
+      "brandSubTitle":"Typically replies within a day",
+      "brandImg":"DiaPredLogo.png",
+      "welcomeText":"Hi there!\nHow can I help you?",
+      "messageText":"Hello, I have a question about DiaPred",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"923349306436"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
+	
+<div class="footer" style="overflow: hidden; width: 100%;">
+	<iframe src="footer.html" style=" width: 100%; overflow: hidden;" scrolling="no"></iframe>
+	</div>
+	
+</body>
+</html>
